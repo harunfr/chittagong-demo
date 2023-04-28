@@ -7,7 +7,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,57 +27,65 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
-    <!-- <script src="js/bootstrap.bundle.js" defer></script>
-    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Demo</title>
+    <link
+      rel="shortcut icon"
+      href="./images/common/favicon.jpg"
+      type="image/x-icon"
+    />
+    <title>Chittagong Demo</title>
   </head>
   <body>
     <div class="main-container">
       <!-- HERO -->
-      <div class="hero">
+      <div class="hero container">
         <div class="hero-left">
           <header class="header">
-            <h1 class="brand">
-              <img src="./images/hero/chittagong.svg" />
-            </h1>
+            <h1 class="brand">Chittagong</h1>
             <img src="./images/hero/hamburger.svg" />
           </header>
 
-          <p class="main-title">
+          <p class="main-title fs-45 tc-primary">
             Start your adventure <br />
             from <span class="bold">Rangamati</span>
             <img src="./images/hero/arrow_1.svg" />
           </p>
 
           <div class="btn-search-pair">
-            <button class="btn btn-success ready">Ready To Go</button>
+            <button class="btn btn-success ready fs-15">
+              Ready To Go
+            </button>
             <div class="form-group has-search">
               <span class="fa fa-search form-control-feedback"></span>
               <input
                 type="text"
-                class="form-control"
+                class="form-control tc-gray-1 fs-15"
                 placeholder="Search for your destination"
               />
             </div>
           </div>
           <div class="exites-wrapper">
-            <div class="exites-title">What exitest you most?</div>
+            <div class="exites-title fs-18 fw-bolder">
+              What exitest you most?
+            </div>
             <div class="exites">
-              <div class="exites-el">
+              <div class="exites-el tc-gray-3 fs-15">
                 <img src="./images/hero/hiking_1.svg" />
                 <div>Tracking</div>
               </div>
-              <div class="exites-el">
+              <div class="exites-el tc-gray-3 fs-15">
                 <img src="./images/hero/kayak.svg" />
                 <div>Kayaking</div>
               </div>
-              <div class="exites-el">
+              <div class="exites-el active fs-15">
                 <img src="./images/hero/surfboard.svg" />
                 <div>Surfing</div>
               </div>
-              <div class="exites-el">
+              <div class="exites-el tc-gray-3 fs-15">
                 <img src="./images/hero/camping-tent.svg" />
                 <div>Camping</div>
               </div>
@@ -78,88 +95,168 @@
         <div class="hero-right">
           <img class="play-btn" src="./images/hero/play.svg" />
           <div class="slides">
-            <div class="slide active">Rangamati</div>
-            <div class="slide">Sajek Velly</div>
-            <div class="slide">Coxbazar</div>
+            <div class="slide active fs-13">Rangamati</div>
+            <div class="slide fs-13">Sajek Velly</div>
+            <div class="slide fs-13">Coxbazar</div>
           </div>
         </div>
       </div>
 
       <!-- POPULAR -->
       <section class="popular">
-        <h2 class="popular-title">Popular Destination</h2>
-        <nav class="destinations">
-          <ul>
-            <li><a href="#">Trekking</a></li>
+        <h2 class="popular-title fs-40">Popular Destination</h2>
+        <nav>
+          <ul class="destination-links fs-15">
+            <li class="tc-gray-3"><a href="#">Trekking</a></li>
             <li class="active"><a href="#">Beach</a></li>
-            <li><a href="#">Family Trip</a></li>
-            <li><a href="#">Night Trip</a></li>
+            <li class="tc-gray-3"><a href="#">Family Trip</a></li>
+            <li class="tc-gray-3"><a href="#">Night Trip</a></li>
           </ul>
         </nav>
 
-        <div class="destination-cards">
-          <div class="destination-card">
-            <div class="destination-preview"></div>
-            <div class="destination-body">
-              <h3 class="destination-title">Guliakhali Beach</h3>
-              <p class="destination-info">
+        <div class="destination-cards d-flex">
+          <div class="card destination-card" style="width: 18rem">
+            <img
+              src="./images/popular/guliakhali.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-18">Guliakhali Beach</h5>
+              <p class="card-text tc-gray-3 fs-13">
                 Sitakundo ipsum dolor sit amet, consectetur adipiscing
                 elit. Phasellus enim, faucibus semper ultricies neque
                 aenean
               </p>
             </div>
           </div>
-          <!-- Missing 3 more cards -->
-        </div>
-      </section>
-
-      <!-- FEATURE -->
-      <section class="feature">
-        <aside class="feature-left">
-          <div class="images???"></div>
-          <div class="feature-card">
-            <h3 class="name">
-              Shaid Zaman<span class="separator"> | </span
-              ><span class="occupation">Graphic Designer</span>
-            </h3>
-          </div>
-        </aside>
-        <header class="header">
-          <div>-></div>
-          <h3 class="feature-main-title">
-            Life is either a daring advanture or nothing
-          </h3>
-          <div class="horizontal-pipe">h-pipe</div>
-        </header>
-        <div class="features">
-          <div class="feature">
-            <div>icon</div>
-            <div class="feature-body">
-              <h4 class="feature-title">Trip with best guide</h4>
-              <p class="feature-body">
-                We have best sit amet, consectetur adipiscing elit.
-                Amet non metus, enim gravida nullam. Eget id sajek.
+          <div class="card destination-card" style="width: 18rem">
+            <img
+              src="./images/popular/himchori.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-18">Guliakhali Beach</h5>
+              <p class="card-text tc-gray-3 fs-13">
+                Sitakundo ipsum dolor sit amet, consectetur adipiscing
+                elit. Phasellus enim, faucibus semper ultricies neque
+                aenean
               </p>
             </div>
           </div>
+          <div
+            class="card destination-card active"
+            style="width: 18rem"
+          >
+            <img
+              src="./images/popular/potenga.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-18">Guliakhali Beach</h5>
+              <p class="card-text tc-gray-3 fs-13">
+                Sitakundo ipsum dolor sit amet, consectetur adipiscing
+                elit. Phasellus enim, faucibus semper ultricies neque
+                aenean
+              </p>
+              <img src="./images/popular/right-arrow.svg" alt="" />
+            </div>
+          </div>
         </div>
+        <div class="popular-bg"></div>
+      </section>
+
+      <!-- FEATURE -->
+      <section class="feature-section d-flex">
+        <aside class="feature-left">
+          <!-- <div class="images???"></div> -->
+          <div class="feature-card">
+            <h3 class="name fs-18">
+              Shaid Zaman<span class="separator tc-gray-3 fs-15">
+                | </span
+              ><span class="occupation tc-gray-3 fs-15"
+                >Graphic Designer</span
+              >
+            </h3>
+            <p class="tc-gray-3 fs-15">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Amet non metus, enim gravida nullam. Eget id in amet
+              blandit lobortis.
+            </p>
+            <nav class="navigation d-flex">
+              <img src="./images/feature/left-arrow.svg" />
+              <img src="./images/feature/right-arrow.svg" />
+            </nav>
+          </div>
+        </aside>
+
+        <div class="features-body">
+          <header class="feature-header">
+            <span class="highlighted fs-15">
+              <img src="./images/feature/right-arrow.svg" /> Trip
+              Sajek 2020</span
+            >
+            <h3 class="feature-main-title fs-40">
+              Life is either a daring advanture or nothing
+            </h3>
+          </header>
+
+          <div class="features">
+            <div class="feature d-flex">
+              <img src="./images/feature/tour-guide.svg" />
+              <div class="feature-body">
+                <h4 class="feature-title fs-24">
+                  Trip with best guide
+                </h4>
+                <p class="feature-body-text tc-gray-3 fs-15">
+                  We have best sit amet, consectetur adipiscing elit.
+                  Amet non metus, enim gravida nullam. Eget id sajek.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex">
+              <img src="./images/feature/photo-machine.svg" />
+              <div class="feature-body">
+                <h4 class="feature-title fs-24">Photography</h4>
+                <p class="feature-body-text tc-gray-3 fs-15">
+                  Nothing is special then photography in your tour.
+                  consectetur adipiscing elit. Amet non metus.
+                </p>
+              </div>
+            </div>
+            <div class="feature d-flex">
+              <img src="./images/feature/winner.svg" width="45" />
+              <div class="feature-body">
+                <h4 class="feature-title fs-24">Games & Events</h4>
+                <p class="feature-body-text tc-gray-3 fs-15">
+                  Of course we can’t give you a dry trip. Cnsectetur
+                  adipiscing elit. Amet non metus, enim gravida
+                  nullam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Need 2 more feature -->
       </section>
 
       <!-- FAQ -->
-      <section class="faq">
-        <header class="faq-header">
-          <h2 class="faq-title">
-            Some useful answer that might help you
+      <section class="faq d-flex">
+        <header class="faq-header text-center fw-bolder">
+          <h2 class="faq-title fs-40">
+            Some useful answer<br />that might help you
           </h2>
           <img src="./images/faq/vertical-bar.svg" />
         </header>
         <article class="faq-body d-flex">
           <div class="faq-body-left">
-            <div class="faq-dropdowns">
+            <div class="faq-dropdowns d-flex">
               <div class="faq-dropdown">
                 <div class="faq-dropdown-header">
-                  <h3 class="faq-dropdown-title">
+                  <h3 class="faq-dropdown-title tc-gray-1 fs-24">
                     Who are your travellers?
                     <img src="./images/faq/dropdown.svg" />
                   </h3>
@@ -167,7 +264,7 @@
               </div>
               <div class="faq-dropdown">
                 <div class="faq-dropdown-header">
-                  <h3 class="faq-dropdown-title">
+                  <h3 class="faq-dropdown-title tc-gray-1 fs-24">
                     How many people will be on my trip?
                     <img src="./images/faq/dropdown.svg" />
                   </h3>
@@ -175,12 +272,12 @@
               </div>
               <div class="faq-dropdown active">
                 <div class="faq-dropdown-header">
-                  <h3 class="faq-dropdown-title">
+                  <h3 class="faq-dropdown-title fs-24">
                     Are there age restrictions on your trips?
                     <img src="./images/faq/dropdown-active.svg" />
                   </h3>
                 </div>
-                <div class="faq-dropdown-body">
+                <div class="faq-dropdown-body fs-15">
                   For the majority of our trips the minimum age is 15.
                   An adult must accompany all children under the age
                   of 18. Our Overland Adventures have a minimum age of
@@ -189,19 +286,18 @@
               </div>
               <div class="faq-dropdown">
                 <div class="faq-dropdown-header">
-                  <h3 class="faq-dropdown-title">
+                  <h3 class="faq-dropdown-title tc-gray-1 fs-24">
                     Can I just do part of the trip?
                     <img src="./images/faq/dropdown.svg" />
                   </h3>
                 </div>
               </div>
             </div>
-            <button class="dropdown-load-more btn btn-success">
+            <button class="dropdown-load-more btn btn-success fs-15">
               More Questions?
             </button>
           </div>
-          <!-- Download Chittagong application
-to get more info & booking -->
+
           <div class="faq-body-right">
             <div class="preview-images">
               <img
@@ -213,13 +309,25 @@ to get more info & booking -->
                 src="./images/faq/phone-screen-bg.png"
               />
             </div>
+            <div class="download-card">
+              <p class="download-title tc-gray-2 fs-15 text-center">
+                Download
+                <span class="highlighted">Chittagong</span>
+                application<br />
+                to get more info & booking
+              </p>
+              <div class="store-links d-flex">
+                <img src="./images/faq/google-play.png" />
+                <img src="./images/faq/google-play.png" />
+              </div>
+            </div>
           </div>
         </article>
       </section>
 
       <!-- COMPANY LOGOS -->
       <section class="company-logos d-flex">
-        <h2>Our Partners</h2>
+        <h2 class="fs-24 fw-bolder">Our&nbsp;Partners</h2>
         <img src="./images/company-logos/company-1.svg" />
         <img src="./images/company-logos/company-2.svg" />
         <img src="./images/company-logos/company-3.svg" />
@@ -228,16 +336,16 @@ to get more info & booking -->
 
       <!-- ALBUM -->
       <section class="album">
-        <h2 class="album-main-title">Photo Album</h2>
-        <nav class="album-nav">
+        <h2 class="album-main-title fs-40 pb-5">Photo Album</h2>
+        <nav class="album-nav pb-3">
           <ul class="album-categories d-flex">
-            <li>All</li>
-            <li>Family</li>
-            <li>Couple</li>
-            <li class="active">School Tour</li>
-            <li>Camping</li>
+            <li class="tc-gray-3 fw-bold fs-15">All</li>
+            <li class="tc-gray-3 fw-bold fs-15">Family</li>
+            <li class="tc-gray-3 fw-bold fs-15">Couple</li>
+            <li class="active fw-bold fs-15">School Tour</li>
+            <li class="tc-gray-3 fw-bold fs-15">Camping</li>
           </ul>
-          <div class="next-and-prev d-flex">
+          <div class="next-and-prev d-flex pb-4">
             <img src="./images/album/prev.svg" />
             <img src="./images/album/next.svg" />
           </div>
@@ -247,13 +355,13 @@ to get more info & booking -->
           <div class="album-card active">
             <img src="./images/album/album-image-1.jpg" />
             <div class="album-info d-flex">
-              <h3 class="album-title">Coxbazar 2020</h3>
+              <h3 class="album-title fs-24">Coxbazar 2020</h3>
               <div class="album-meta d-flex">
-                <div class="videos d-flex">
+                <div class="videos d-flex tc-gray-3 fs-13">
                   <img src="./images/album/video.svg" />
                   <div>5&nbsp;Videos</div>
                 </div>
-                <div class="photos d-flex">
+                <div class="photos d-flex tc-gray-3 fs-13">
                   <img src="./images/album/image.svg" />
                   <div>24&nbsp;Photos</div>
                 </div>
@@ -263,13 +371,13 @@ to get more info & booking -->
           <div class="album-card">
             <img src="./images/album/album-image-2.jpg" />
             <div class="album-info">
-              <h3 class="album-title">Sajek 2018</h3>
+              <h3 class="album-title fs-24">Sajek 2018</h3>
             </div>
           </div>
           <div class="album-card">
             <img src="./images/album/album-image-2.jpg" />
             <div class="album-info">
-              <h3 class="album-title">Guliakhali 2016</h3>
+              <h3 class="album-title fs-24">Guliakhali 2016</h3>
             </div>
           </div>
         </div>
@@ -279,7 +387,7 @@ to get more info & booking -->
       <section class="services-section">
         <!-- Service Title -->
         <div class="services-header">
-          <h2 class="services-main-title">
+          <h2 class="services-main-title fs-40">
             Our<br />
             Services
           </h2>
@@ -289,11 +397,11 @@ to get more info & booking -->
         <div class="services">
           <div class="service active">
             <img
-              class="service-img"
+              class="service-img mb-4"
               src="./images/service/maternity.svg"
             />
-            <div class="service-title">Family Trip</div>
-            <div class="service-body">
+            <div class="service-title fs-18 pb-3">Family Trip</div>
+            <div class="service-body tc-gray-3 fs-13">
               It is good if you dolor sit amet, consectetur adipiscing
               elit. Amet non metus, enim gravida nullam.
             </div>
@@ -301,11 +409,13 @@ to get more info & booking -->
 
           <div class="service active">
             <img
-              class="service-img"
+              class="service-img mb-4"
               src="./images/service/rocket.svg"
             />
-            <div class="service-title">Educational Trip</div>
-            <div class="service-body">
+            <div class="service-title fs-18 pb-3">
+              Educational Trip
+            </div>
+            <div class="service-body tc-gray-3 fs-13">
               School? College? or, Univercity? amet, consectetur
               adipiscing elit. Amet non metus, enim gravida nullam.
             </div>
@@ -313,11 +423,13 @@ to get more info & booking -->
 
           <div class="service">
             <img
-              class="service-img"
+              class="service-img opacity-25 mb-4"
               src="./images/service/friend.svg"
             />
-            <div class="service-title">Friends & More</div>
-            <div class="service-body">
+            <div class="service-title fs-18 opacity-25 pb-3">
+              Friends & More
+            </div>
+            <div class="service-body fs-13 tc-gray-3 opacity-25">
               Nothing is better than hangout with friends sit amet,
               consectetur adipiscing elit. Amet non metus, enim
             </div>
@@ -334,26 +446,30 @@ to get more info & booking -->
           <!-- <div class="banner-img"></div> -->
           <img src="./images/contact/contact-bg.png" alt="" />
           <div class="banner-left-body">
-            <p class="banner-info text-center">
+            <p class="banner-info text-center fs-15">
               Get free news and info about travel<br />
               <span class="highlighted">Subscribe</span> to our
               newsletter
             </p>
             <form class="subscribe">
-              <input type="email" placeholder="Email Address" />
-              <button class="subscribe-btn btn btn-success">
+              <input
+                class="fs-13 email-input"
+                type="email"
+                placeholder="Email Address"
+              />
+              <button class="subscribe-btn btn btn-success fs-15">
                 Subscribe
               </button>
             </form>
           </div>
         </div>
         <!-- Contact Body -->
-        <div class="contact-main">
-          <div class="intro">
-            <img src="./images/contact/right-arrow.svg" alt="" />
-            <div>Contact With Us</div>
+        <div class="contact-main pt-5">
+          <div class="intro d-flex mb-2">
+            <img src="./images/contact/right-arrow.svg" />
+            <div class="fs-15 px-4 highlighted">Contact With Us</div>
           </div>
-          <h2 class="contact-title">
+          <h2 class="contact-title fs-40">
             We are free to discuss, Let’s start exploring
           </h2>
           <img src="./images/contact/vertical-bar.svg" alt="" />
@@ -362,8 +478,8 @@ to get more info & booking -->
             <div class="contact d-flex">
               <img src="./images/contact/pin.svg" alt="" />
               <div class="contact-body">
-                <div class="contact-link">Our Office</div>
-                <div class="contact-address">
+                <div class="contact-link fs-24">Our Office</div>
+                <div class="contact-address tc-gray-3 fs-18">
                   4330, Hathazari Avenue Mall, Chittagong
                 </div>
               </div>
@@ -372,8 +488,8 @@ to get more info & booking -->
             <div class="contact d-flex">
               <img src="./images/contact/phone.svg" alt="" />
               <div class="contact-body">
-                <div class="contact-link">Our Office</div>
-                <div class="contact-address">
+                <div class="contact-link fs-24">Our Office</div>
+                <div class="contact-address tc-gray-3 fs-18">
                   4330, Hathazari Avenue Mall, Chittagong
                 </div>
               </div>
@@ -382,8 +498,8 @@ to get more info & booking -->
             <div class="contact d-flex">
               <img src="./images/contact/message.svg" alt="" />
               <div class="contact-body">
-                <div class="contact-link">Our Office</div>
-                <div class="contact-address">
+                <div class="contact-link fs-24">Our Office</div>
+                <div class="contact-address tc-gray-3 fs-18">
                   4330, Hathazari Avenue Mall, Chittagong
                 </div>
               </div>
@@ -394,16 +510,18 @@ to get more info & booking -->
 
       <!-- SUBMIT CV -->
       <section class="submit-cv">
-        <h2 class="submit-title">
+        <h2 class="submit-title fs-40">
           Become a tour guide!<br />Explore the city, Earn Money
         </h2>
-        <p class="submit-body">
+        <p class="submit-body fs-15">
           Don’t miss the chance. sum dolor sit amet, consectetur
           adipiscing elit. Amet non metus, enim gravida nullam. Eget
           id in amet blandit lobortis. Lorem ipsum dolor sit amet,
           consectetur
         </p>
-        <button class="submit-btn btn btn-light">Submit Cv</button>
+        <button class="submit-btn btn btn-light fs-15">
+          Submit Cv
+        </button>
       </section>
 
       <!-- MAIN FOOTER -->
@@ -429,8 +547,8 @@ to get more info & booking -->
           <!-- Link Sections X 4 -->
           <nav class="links-sections d-flex">
             <section class="links-section">
-              <h5 class="link-title">Company</h5>
-              <ul class="links">
+              <h5 class="link-title fs-18 pb-3">Company</h5>
+              <ul class="links fs-15">
                 <li class="link-item">
                   <a href="#" class="text-reset">Career</a>
                 </li>
@@ -450,8 +568,8 @@ to get more info & booking -->
             </section>
 
             <section class="links-section">
-              <h5 class="link-title">Design</h5>
-              <ul class="links">
+              <h5 class="link-title fs-18 pb-3">Design</h5>
+              <ul class="links fs-15">
                 <li class="link-item">
                   <a href="#" class="text-reset">2D Designer</a>
                 </li>
@@ -471,8 +589,8 @@ to get more info & booking -->
             </section>
 
             <section class="links-section">
-              <h5 class="link-title">Links</h5>
-              <ul class="links">
+              <h5 class="link-title fs-18 pb-3">Links</h5>
+              <ul class="links fs-15">
                 <li class="link-item">
                   <a href="#" class="text-reset">Projects</a>
                 </li>
@@ -492,8 +610,8 @@ to get more info & booking -->
             </section>
 
             <section class="links-section">
-              <h5 class="link-title">Material</h5>
-              <ul class="links">
+              <h5 class="link-title fs-18 pb-3">Material</h5>
+              <ul class="links fs-15">
                 <li class="link-item">
                   <a href="#" class="text-reset">Company Profile</a>
                 </li>
@@ -516,7 +634,9 @@ to get more info & booking -->
 
         <!-- Bottom of Footer -->
       </footer>
-      <div class="mail-link w-100 text-center">
+
+      <!-- BOTTOM, CONTACT -->
+      <div class="mail-link w-100 text-center fs-15">
         <a href="mailto:aflamesaimon@gmail.com" class="text-reset"
           >aflamesaimon@gmail.com</a
         >
